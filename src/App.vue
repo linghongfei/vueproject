@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
@@ -17,6 +18,12 @@ export default {
     return{
       age:30
     }
+  },
+  mounted(){
+    let url = "http://mock-api.com/5g7xEZne.mock/city/list";
+    axios.get(url).then((res)=>{
+      console.log(res)
+    })
   }
 }
 </script>
