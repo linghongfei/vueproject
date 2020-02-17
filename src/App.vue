@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import jsonp from 'jsonp'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
@@ -16,13 +16,15 @@ export default {
   },
   data(){
     return{
-      age:30
+      age:30,
+      data:''
     }
   },
   mounted(){
-    let url = "http://mock-api.com/5g7xEZne.mock/city/list";
-    axios.get(url).then((res)=>{
-      console.log(res)
+    let url = "https://www.imooc.com/search/hotwords";
+    jsonp(url,(err,res)=>{
+      let result = res;
+      this.data = result;
     })
   }
 }
