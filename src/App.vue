@@ -21,7 +21,7 @@ export default {
     }
   },
   mounted(){
-    let url = "https://www.imooc.com/search/hotwords";
+    let url = "/search/hotwords";
     jsonp(url,(err,res)=>{
       let result = res;
       this.data = result;
