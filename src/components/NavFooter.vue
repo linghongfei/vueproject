@@ -1,7 +1,6 @@
 <template>
     <div>
-        <span>aa</span>
-        <div>bb</div>
+        nav - footer
     </div>
 </template>
 <script>

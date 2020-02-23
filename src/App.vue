@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import jsonp from 'jsonp'
-
 export default {
   name: 'App',
   components: {
@@ -14,16 +12,14 @@ export default {
   },
   data(){
     return{
-      age:30,
-      data:'1'
+      res:{}
     }
   },
   mounted(){
-    let url = "/search/hotwords";
-    jsonp(url,(err,res)=>{
-      let result = res;
-      this.data = result;
-    })
+    // 本地加载请求静态json文件
+    this.axios.get('/mock/user/login.json').then((res)=>{
+      this.res = res;
+    });
   }
 }
 </script>
