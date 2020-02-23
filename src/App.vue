@@ -17,7 +17,7 @@ export default {
   data(){
     return{
       age:30,
-      data:''
+      data:'1'
     }
   },
   mounted(){
