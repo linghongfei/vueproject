@@ -2,9 +2,10 @@ import Vue from 'vue'
 import router from './router';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-import Home from './pages/home';
-// import App from './App';
+import App from './App';
 // import env from './env';
+import './assets/scss/reset.scss';
+import './assets/scss/config.scss';
 
 // mock 开关
 const mock = true;
@@ -34,5 +35,5 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
-  render: h => h(Home),
+  render: h => h(App),
 }).$mount('#app')
