@@ -16,7 +16,7 @@ export default {
     }
   },
   mounted(){
-    // 通过mock加载接口文件
+    // 本地集成mock
     this.axios.get('/login').then((res)=>{
       this.res = res;
     });
