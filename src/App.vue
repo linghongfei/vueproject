@@ -16,8 +16,8 @@ export default {
     }
   },
   mounted(){
-    // 本地加载请求静态json文件
-    this.axios.get('/mock/user/login.json').then((res)=>{
+    // 通过mock加载接口文件
+    this.axios.get('/login').then((res)=>{
       this.res = res;
     });
   }

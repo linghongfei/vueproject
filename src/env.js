@@ -2,7 +2,7 @@ let baseURL;
 
 switch(process.env.NODE_ENV){ //node js 环境变量
     case 'development': //开发环境
-        baseURL = 'http://dev-mall-pre.springboot.cn/api';
+        baseURL = 'http://mock-api.com/5g7xEZne.mock';
         break;
     case 'test': //测试环境
         baseURL = 'http://test-mall-pre.springboot.cn/api';
